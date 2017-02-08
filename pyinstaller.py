@@ -15,5 +15,5 @@ Main command-line interface to PyInstaller.
 
 if __name__ == '__main__':
     from PyInstaller.__main__ import run
-    opts = ['FrequencyAnalyzer.py', '-F']
+    opts = ['FineSpectrumAnalyzer.py', '-F']
     run(opts)
