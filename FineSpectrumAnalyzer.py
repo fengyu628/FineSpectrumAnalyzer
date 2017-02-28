@@ -61,13 +61,15 @@ class MainWindow(QtGui.QMainWindow):
 
         self.startFreqShowLabel = MyLabel('Start Freq (KHz):')
         self.startFreqShowEdit = MyEdit('889000')
-        # self.startFreqShowEdit.setFixedWidth(50)
+        self.startFreqShowEdit.setAlignment(QtCore.Qt.AlignCenter)
+        # self.startFreqShowEdit.setFixedWidth(80)
         # self.connect(self.startFreqShowEdit, QtCore.SIGNAL('returnPressed()'), self.start_stop_freq_show_change)
         # self.startFreqShowEdit.setDisabled(True)
 
         self.stopFreqShowLabel = MyLabel('Stop Freq (KHz):')
         self.stopFreqShowEdit = MyEdit('891000')
-        # self.stopFreqShowEdit.setFixedWidth(50)
+        self.stopFreqShowEdit.setAlignment(QtCore.Qt.AlignCenter)
+        # self.stopFreqShowEdit.setFixedWidth(80)
         # self.connect(self.stopFreqShowEdit, QtCore.SIGNAL('returnPressed()'), self.start_stop_freq_show_change)
         # self.stopFreqShowEdit.setDisabled(True)
 
@@ -78,10 +80,10 @@ class MainWindow(QtGui.QMainWindow):
         self.fixScreenButton.setFixedHeight(40)
         self.connect(self.fixScreenButton, QtCore.SIGNAL('clicked()'), self.fix_screen)
 
-        self.setFreqRangeButton = QtGui.QPushButton('Set Freq Range')
-        self.setFreqRangeButton.setFont(QtGui.QFont("Calibri", 10))
-        self.setFreqRangeButton.setFixedWidth(100)
-        self.setFreqRangeButton.setFixedHeight(40)
+        self.setFreqRangeButton = QtGui.QPushButton('Set\nFreq Range')
+        self.setFreqRangeButton.setFont(QtGui.QFont("Calibri", 12))
+        self.setFreqRangeButton.setFixedWidth(90)
+        self.setFreqRangeButton.setFixedHeight(50)
         self.connect(self.setFreqRangeButton, QtCore.SIGNAL('clicked()'), self.start_stop_freq_show_change)
 
         # self.time_mode_x_show_length = 5
